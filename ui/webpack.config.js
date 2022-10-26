@@ -1,6 +1,6 @@
 const path = require('path');
 
-const groupKind = 'argoproj.io/analysisrun';
+const groupKind = 'argoproj.io/AnalysisRun';
 
 const config = {
   entry: {
