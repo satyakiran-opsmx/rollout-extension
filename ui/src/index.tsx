@@ -199,13 +199,14 @@ interface ApplicationResourceTree {}
 export const Extension = (props: {
   tree: ApplicationResourceTree;
   resource: State;
+  application: any;                          
 }) => {
   const ro = parseInfoFromResourceNode(props.tree, props.resource);
   {console.log(props)};
   
   return <>
   <div>HELLLO ARGO PLUGIN</div>
-  <RolloutWidget rollout={ro} />
+  <RolloutWidget rollout={ro} appName={props.application.metadata.name}/>
   </>
 };
 
