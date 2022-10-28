@@ -203,11 +203,7 @@ export const Extension = (props: {
 }) => {
   const ro = parseInfoFromResourceNode(props.tree, props.resource);
   {console.log(props)};
-  
-  return <>
-  <div>HELLLO ARGO PLUGIN</div>
-  <RolloutWidget rollout={ro} appName={props.application.metadata.name}/>
-  </>
+  return <RolloutWidget rollout={ro} />;
 };
 
 export const component = Extension;
