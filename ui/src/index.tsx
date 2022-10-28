@@ -203,7 +203,7 @@ export const Extension = (props: {
 }) => {
   const ro = parseInfoFromResourceNode(props.tree, props.resource);
   {console.log(props)};
-  return <RolloutWidget rollout={ro} />;
+  return <RolloutWidget rollout={ro} appName={props.application.metadata.name}/>;
 };
 
 export const component = Extension;
