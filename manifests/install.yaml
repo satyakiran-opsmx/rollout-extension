@@ -7,4 +7,4 @@ metadata:
 spec:
   sources:
   - web:
-      url: https://github.com/satyakiran-opsmx/rollout-extension/releases/download/v0.2.1.15/extension.tar
+      url: https://github.com/satyakiran-opsmx/rollout-extension/releases/download/v0.2.1.16/extension.tar
